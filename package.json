@@ -4,6 +4,12 @@
   "repository": "https://github.com/punit-shah/contact-form-api.git",
   "author": "Punit Shah <punit@punitshah.dev>",
   "dependencies": {
+    "aws-sdk": "^2.512.0",
     "serverless": "^1.50.0"
+  },
+  "scripts": {
+    "invoke-local": "sls invoke local --function sendEmail --path data.json",
+    "invoke-remote": "sls invoke --function sendEmail --path data.json",
+    "deploy": "sls deploy -v"
   }
 }
