@@ -46,8 +46,10 @@ const buildResponse = (statusCode, data) => ({
 module.exports.sendEmail = async event => {
   try {
     const formData = JSON.parse(event.body);
+    console.log(formData);
     const emailParams = buildEmailParams(formData);
     const data = await SES.sendEmail(emailParams).promise();
+    console.log('Email sent successfully');
     return buildResponse(200, data);
   } catch (error) {
     console.log(error);
