@@ -1,0 +1,9 @@
+{
+  "name": "contact-form-api",
+  "version": "1.0.0",
+  "repository": "https://github.com/punit-shah/contact-form-api.git",
+  "author": "Punit Shah <punit@punitshah.dev>",
+  "dependencies": {
+    "serverless": "^1.50.0"
+  }
+}
